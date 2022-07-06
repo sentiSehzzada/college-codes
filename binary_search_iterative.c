@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int binarySearch(int array[], int x, int low, int high) {
-  // Repeat until the pointers low and high meet each other
+  // Ye tab tak krenge jab tak ki low aur high ek dusre se gale na mil le
   while (low <= high) {
     int mid = low + (high - low) / 2;
 
@@ -33,7 +33,7 @@ int main(void) {
     int x;
     printf("what you want to find : ");
     scanf("%d",&x);
-//   int x = 4;
+//   int x = 4;suru me bas practical k liye kiye the
   int result = binarySearch(array, x, 0, n-1);
   if (result == -1)
     printf("Not found");
