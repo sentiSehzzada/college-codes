@@ -6,15 +6,15 @@ int binarySearch(int array[], int x, int low, int high) {
   if (high >= low) {
     int mid = low + (high - low) / 2;
 
-    // If found at mid, then return it
+    // agar mid hi apna answer ho to wahi pr return kr dena hai
     if (array[mid] == x)
       return mid;
 
-    // Search the left half
+    // agar mid se niche hai to left side wala serach krna hai
     if (array[mid] > x)
       return binarySearch(array, x, low, mid - 1);
 
-    // Search the right half
+    // agar mid se upar hai to right side wala karna hai
     return binarySearch(array, x, mid + 1, high);
   }
 
